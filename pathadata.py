@@ -1,0 +1,11 @@
+import pandas as pd
+df=pd.read_csv('pulsedata.csv')
+print(df)
+print("Covariance between pulse and Bsugar")
+print(df['Pulse'].cov(df['Bsugar']))
+print("Covariance between calories and Bsugar")
+print(df['Maxpulse'].cov(df['Bsugar']))
+print("Crelation between calories and Bsugar")
+print(df['Maxpulse'].corr(df['Bsugar']))
+print(df.corr())
+print(df.cov())
